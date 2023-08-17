@@ -22,10 +22,11 @@
     />
 
     <link rel="stylesheet" href="./css/styles.css" />
+    <link rel="stylesheet" href="./css/media.css" />
   </head>
   <body>
     <!--? Header -->
-    <header class="header-border">
+    <!-- <header class="header-border">
       <div class="container header-wrap">
         <nav class="header-nav">
           <a class="nav-logo" href="./index.html">Web<span class="logo-style">Studio</span></a>
@@ -45,7 +46,7 @@
           </ul>
         </address>
       </div>
-    </header>
+    </header> -->
 
     <!--? Main -->
     <main>
@@ -106,8 +107,8 @@
               </div>
               <h3 class="features-title">Technologies</h3>
               <p class="features-text">
-                Design practice focused on digital experiences. We bring forth a deep passion for
-                problem-solving.
+                Design practice focused on digital <br />
+                experiences. We bring forth a deep passion for problem-solving.
               </p>
             </li>
           </ul>
@@ -117,13 +118,29 @@
       <!--? Portfolio -->
       <section class="portfolio section">
         <div class="container">
-          <h2 class="portfolio-title">What are we doing</h2>
-          <ul class="display-flex list">
+          <h2 class="portfolio-title center-title">What are we doing</h2>
+          <ul class="portfolio-list list">
             <li class="portfolio-item">
-              <img src="./images/img1.jpg" alt="computer" width="360" />
+              <img 
+              srcset="./images/computer.jpg 1x, ./images/computer-2x.jpg 2x"
+              src="./images/computer.jpg" 
+              alt="computer" 
+              width="360" />
             </li>
-            <li class="portfolio-item"><img src="./images/img2.jpg" alt="app" width="360" /></li>
-            <li class="portfolio-item"><img src="./images/img3.jpg" alt="phone" width="360" /></li>
+            <li class="portfolio-item">
+              <img 
+              srcset="./images/app.jpg 1x, ./images/app-2x.jpg 2x"
+              src="./images/app.jpg" 
+              alt="app" 
+              width="360" />
+            </li>
+            <li class="portfolio-item">
+              <img 
+              srcset="./images/phone.jpg 1x, ./images/phone-2x.jpg 2x"
+              src="./images/phone.jpg" 
+              alt="phone" 
+              width="360" />
+            </li>
           </ul>
         </div>
       </section>
@@ -175,7 +192,7 @@
             <li class="team-item">
               <img src="./images/Tom_Ford.jpg" alt="Tom Ford" width="264" />
               <div class="card-container">
-                <h3 class="team-member-title">Tom Ford</h3>
+                <h3 class="team-member-title center-title">Tom Ford</h3>
                 <p class="team-text">Frontend Developer</p>
                 <ul class="social-link">
                   <li class="social-item">
@@ -214,7 +231,7 @@
             <li class="team-item">
               <img src="./images/Camila_Garcia.jpg" alt="Camila Garcia" width="264" />
               <div class="card-container">
-                <h3 class="team-member-title">Camila Garcia</h3>
+                <h3 class="team-member-title center-title">Camila Garcia</h3>
                 <p class="team-text">Marketing</p>
                 <ul class="social-link">
                   <li class="social-item">
@@ -253,7 +270,7 @@
             <li class="team-item">
               <img src="./images/Daniel_Wilson.jpg" alt="Daniel Wilson" width="264" />
               <div class="card-container">
-                <h3 class="team-member-title">Daniel Wilson</h3>
+                <h3 class="team-member-title center-title">Daniel Wilson</h3>
                 <p class="team-text">UI Designer</p>
                 <ul class="social-link">
                   <li class="social-item">
@@ -293,7 +310,7 @@
         </div>
       </section>
 
-      <section class="section customers">
+      <!-- <section class="section customers">
         <div class="container">
           <h2 class="customers-title">Customers</h2>
           <ul class="customers-list">
@@ -341,11 +358,11 @@
             </li>
           </ul>
         </div>
-      </section>
+      </section> -->
     </main>
 
     <!--? Footer -->
-    <footer class="footer">
+    <!-- <footer class="footer">
       <div class="container footer-wrap">
         <div class="footer-left">
           <a class="nav-logo footer-link" href="./index.html"
@@ -411,7 +428,7 @@
           </form>
         </div>
       </div>
-    </footer>
+    </footer> -->
 
     <div class="backdrop is-hidden" data-modal>
       <div class="modal">
