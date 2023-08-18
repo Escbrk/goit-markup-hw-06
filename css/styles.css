@@ -49,6 +49,7 @@ body {
 
 img {
   display: block;
+  width: 100%;
 }
 
 ul,
@@ -277,6 +278,7 @@ span {
 .features-title {
   margin-bottom: 8px;
   text-align: center;
+  font-size: 36px;
 }
 
 .features-text {
@@ -317,9 +319,13 @@ span {
 
 .team-wrap {
   display: flex;
-  flex-direction: row;
+  /* flex-direction: row; */
   flex-wrap: wrap;
-  gap: 24px;
+  gap: 72px;
+}
+
+.team > .container {
+  max-width: 296px;
 }
 
 .team {
@@ -338,7 +344,8 @@ span {
 
 .team-item {
   background-color: var(--main-bcg-color);
-  width: calc((100% - 3 * 24px) / 4);
+  /* width: calc((100% - 24px) / 2); tablet*/
+  /* width: calc((100% - 3 * 24px) / 4); desktop*/
   border-radius: 0px 0px 4px 4px;
   box-shadow: 0px 2px 1px 0px rgba(46, 47, 66, 0.08), 0px 1px 1px 0px rgba(46, 47, 66, 0.16),
     0px 1px 6px 0px rgba(46, 47, 66, 0.08);
@@ -403,11 +410,12 @@ span {
 
 .customers-list {
   display: flex;
-  gap: 24px;
+  flex-wrap: wrap;
+  gap: 72px 16px;
 }
 
 .customers-item {
-  width: calc((100% - 5 * 24px) / 6);
+  width: calc((100% - 16px) / 2);
   position: relative;
 }
 
@@ -439,6 +447,7 @@ span {
 .footer-wrap {
   display: flex;
   align-items: baseline;
+  flex-wrap: wrap;
 }
 
 .footer {
@@ -451,6 +460,7 @@ span {
   line-height: 1.5;
   letter-spacing: 0.02em;
   max-width: 264px;
+  margin: 0 auto;
 }
 
 .logo-footer {
@@ -460,22 +470,36 @@ span {
 .footer-link {
   display: inline-block;
   margin-bottom: 16px;
+  text-align: center;
 }
 
 .footer-left {
-  margin-right: 120px;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  margin: 0 auto;
 }
 
 .footer-social {
-  margin-right: 80px;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  margin: auto;
 }
 
+.subscribe-title,
 .footer-social-text {
   color: var(--color-white);
   font-weight: 500;
   line-height: 1.5;
   letter-spacing: 0.02em;
   margin-bottom: 16px;
+  margin-top: 72px;
+  text-align: center;
+}
+
+.modal-form > .footer-social-text {
+  margin: 0;
 }
 
 .footer-social .social-link {
@@ -821,16 +845,9 @@ span {
 
 .modal-form {
   display: flex;
-  gap: 24px;
-}
-
-.subscribe-title {
-  margin-bottom: 16px;
-  font-weight: 500;
-  font-size: 16px;
-  line-height: 1.5;
-  letter-spacing: 0.02em;
-  color: var(--color-white);
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 16px;
 }
 
 .label {
