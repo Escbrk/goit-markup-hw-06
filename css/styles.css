@@ -192,7 +192,7 @@ span {
 .mob-list {
   display: flex;
   flex-direction: column;
-  gap: 40px;
+  gap: 20px;
 }
 .mob-nav-link {
   padding: 0;
@@ -673,7 +673,7 @@ span {
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%) scale(1);
-  width: 408px;
+  width: 299px;
   min-height: 584px;
   border-radius: 4px;
   background-color: #fcfcfc;
