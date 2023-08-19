@@ -104,6 +104,7 @@ h3 {
 a {
   text-decoration: none;
   display: block;
+  color: inherit;
 }
 
 address {
@@ -157,6 +158,10 @@ span {
   align-items: center;
 }
 
+.header-nav-link:hover {
+  color: var(--color-ocean);
+}
+
 .nav-logo {
   margin-right: 76px;
 }
@@ -178,6 +183,7 @@ span {
   letter-spacing: 0.03em;
   text-transform: uppercase;
   color: var(--color-iris);
+  padding: 24px 0 22px 0;
 }
 
 .mob-nav-link {
@@ -410,6 +416,13 @@ span {
   gap: 24px;
   align-items: center;
   margin-top: 8px;
+  justify-content: center;
+}
+.mob-menu-social-link {
+  display: flex;
+  gap: 56px;
+  align-items: center;
+  margin-top: 48px;
   justify-content: center;
 }
 
