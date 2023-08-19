@@ -45,19 +45,19 @@
             <li><a class="contacts" href="tel:+110001111111">+11 (000) 111-11-11</a></li>
           </ul>
         </address>
-        <button class="mob-menu-open" type="button" data-menu-open>
+        <button class="mob-menu-open" data-menu-open type="button">
           <svg width="32" height="32">
             <use class="mob-menu-icon" href="./images/icons.svg#icon-mob-menu"></use>
           </svg>
         </button>
 
-        <div class="mob-menu">
+        <div class="mob-menu" data-menu>
+          <button class="mob-menu-close-btn" data-menu-close type="button">
+            <svg class="mob-menu-cls-icon" width="8" height="8">
+              <use href="./images/icons.svg#icon-close-black"></use>
+            </svg>
+          </button>
           <div>
-            <button type="button">
-              <svg width="8" height="8">
-                <use href="./images/icons.svg#icon-close-black"></use>
-              </svg>
-            </button>
             <ul class="mob-list list">
               <li><a class="mob-nav-link active" href="./index.html">Studio</a></li>
               <li><a class="mob-nav-link" href="./portfolio.html">Portfolio</a></li>
@@ -67,9 +67,9 @@
           <address class="mob-contacts">
             <ul class="mob-list list">
               <li>
-                <a class="contacts" href="mailto:info@devstudio.com">info@devstudio.com</a>
+                <a class="mob-menu-contacts" href="mailto:info@devstudio.com">info@devstudio.com</a>
               </li>
-              <li><a class="contacts" href="tel:+110001111111">+11 (000) 111-11-11</a></li>
+              <li><a class="mob-menu-contacts" href="tel:+110001111111">+11 (000) 111-11-11</a></li>
             </ul>
           </address>
         </div>
@@ -549,6 +549,7 @@
       </div>
     </div>
 
+    <script src="./js/mobile-menu.js"></script>
     <script src="./js/modal.js"></script>
   </body>
 </html>
