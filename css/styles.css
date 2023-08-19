@@ -251,6 +251,7 @@ span {
   flex-direction: column;
   justify-content: space-between;
   overflow: auto;
+  transition: 350ms;
 }
 
 /*! -------------HEADER END-------------*/
