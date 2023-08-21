@@ -78,12 +78,14 @@
   .contacts {
     padding: 0;
     display: flex;
+    font-size: 12px;
+    letter-spacing: 0.04em;
+    line-height: 1.17;
   }
 
   .hero {
     background-image: linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)),
       url(../images/hero-img-tab.jpg);
-    max-width: 768px;
   }
 
   @media (min-device-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
@@ -204,6 +206,9 @@
   }
   .contacts {
     padding: 24px 0;
+    font-size: 16px;
+    letter-spacing: 0.02em;
+    line-height: 1.5;
   }
 
   .hero {
